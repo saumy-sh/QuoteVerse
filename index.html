@@ -48,12 +48,7 @@
   
 
 
-  <!-- Loading i18next script -->
-  <script src="https://unpkg.com/i18next@21.9.0/dist/umd/i18next.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
-  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.2/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
-  <script src="https://unpkg.com/jquery-i18next@1.2.1/dist/umd/jquery-i18next.min.js"></script>
-
+ 
 
   
   
@@ -65,7 +60,7 @@
       <!-- Quote Section -->
       <section>
         <div class="quote" title="Click to copy quote to clipboard">
-          <h1 class="quote-text" id="quoteTextTag">
+          <h1 class="quote-text" id="quoteTextTag" data-i18n="quote">
             <!-- Quote will appear here  -->
           </h1>
           <h5 class="quote-author" id="quoteAuthorTag">
@@ -148,56 +143,23 @@
           </select>
         </div>
       </section>
+
       <div id="theme_changer_button" class="theme_changer_button">
-        <span class="button-text">Color</span>
+        <span class="button-text" data-i18n="color">Color</span>
         <input type="color" id="color_picker" value="#ededed">
       </div>
 
   </main>
 
-<!-- Initialize i18next -->
-<script>
-  const langUrl = "https://api.github.com/repos/saumy-sh/QuoteVerse/assets/lang";
-  i18next
-    .use(i18nextHttpBackend)
-    .use(i18nextBrowserLanguageDetector)
-    .init({
-      fallbackLng: 'en',
-      debug: true,
-      backend: {
-        loadPath: `${langUrl}/{{lng}}.json`  // Path to your JSON language files
-      }
-    }, function (err, t) {
-      if (err) return console.error(err);
-      jqueryI18next.init(i18next, $, {
-        useOptionsAttr: true  // Use 'data-i18n' attributes for translation
-      });
-      // Initialize the translation of the page
-      updateContent();
-    });
-  i18next.on('languageChanged', () => {
-    updateContent();
-    
-  });
 
-  function updateContent() {
-    // document.querySelector('#quoteTextTag').innerText = i18next.t('quote');
-    // document.querySelector('#quoteAuthorTag').innerText = i18next.t('author');
-    // document.querySelector('#share-button').innerText = i18next.t('share');
-    // // document.querySelector('#addedByTag').innerText = i18next.t('addedBy');
-    // document.querySelector('#generateQuoteBtn').innerText = i18next.t('generate');
-    // document.querySelector('#contributor').innerText = i18next.t('see_all_contributors');
-    // document.querySelector('#contributeButton').innerText = i18next.t('click_to_contribute');
-    $('body').localize(); // This will apply the translations based on data-i18n attributes
-  }
-
-  // Language switcher
-  document.getElementById('languageSwitcher').addEventListener('change', function () {
-    i18next.changeLanguage(this.value);
-  });
-</script>
 
 <!-- Other existing script tags -->
+<script src="./node_modules/i18next/i18next.js"></script>
+<script src="./node_modules/i18next-http-backend/i18nextHttpBackend.js"></script>
+<script src="./node_modules/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/jquery-i18next/jquery-i18next.js"></script>
+<script src="./assets/js/lang.js"></script>
 <script src="./Quotes.js"></script>
 <script src="./assets/js/others.js"></script>
 <script src="./assets/js/main.js"></script>
@@ -254,8 +216,8 @@
   });
 </script>
 
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
