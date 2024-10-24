@@ -567,12 +567,28 @@ window.quotes = [
     addedBy: "iqbalcodes6602",
   },
   {
-    quote:
-      "If you always make the right decision, the safe decision, the one most people make, you will be the same as everyone else.",
-    category: "College",
-    author: "Patrick Bet-David",
-    addedBy: "rohits-web03",
-  },
+    "quote": "If you always make the right decision, the safe decision, the one most people make, you will be the same as everyone else.",
+    "category": "College",
+    "author": "Patrick Bet-David",
+    "addedBy": "rohits-web03",
+    "translations": {
+      "fr": "Si vous faites toujours la bonne décision, la décision sûre, celle que la plupart des gens prennent, vous serez le même que tout le monde.",
+      "es": "Si siempre tomas la decisión correcta, la decisión segura, la que la mayoría de la gente toma, serás igual que todos los demás.",
+      "ru": "Если вы всегда принимаете правильное решение, безопасное решение, то, которое принимают большинство людей, вы будете таким же, как и все остальные.",
+      "it": "Se prendi sempre la decisione giusta, la decisione sicura, quella che fanno la maggior parte delle persone, sarai uguale a tutti gli altri.",
+      "de": "Wenn Sie immer die richtige Entscheidung treffen, die sichere Entscheidung, die die meisten Menschen treffen, werden Sie wie alle anderen sein.",
+      "ja": "もしあなたが常に正しい決定を下し、安全な決定を下し、ほとんどの人が下す決定を下すなら、あなたは他の誰とも同じになります。",
+      "zh": "如果你总是做出正确的决定，安全的决定，也就是大多数人做出的决定，你就会和其他人一样。",
+      "pt": "Se você sempre tomar a decisão certa, a decisão segura, aquela que a maioria das pessoas toma, será igual a todos os outros.",
+      "ar": "إذا كنت دائمًا تتخذ القرار الصحيح، القرار الآمن، الذي يتخذه معظم الناس، فستكون مثل الجميع.",
+      "hi": "यदि आप हमेशा सही निर्णय लेते हैं, सुरक्षित निर्णय लेते हैं, वही निर्णय जो अधिकांश लोग लेते हैं, तो आप सभी के समान होंगे।",
+      "mr": "जर तुम्ही नेहमी योग्य निर्णय घेतला, सुरक्षित निर्णय घेतला, जो निर्णय सर्वात जास्त लोक घेतात, तर तुम्ही इतर सर्वांप्रमाणेच असाल.",
+      "bn": "যদি আপনি সবসময় সঠিক সিদ্ধান্ত নেন, নিরাপদ সিদ্ধান্ত নেন, যা বেশিরভাগ লোকেরা নেয়, তাহলে আপনি অন্য সবার মতোই হয়ে যাবেন।",
+      "kn": "ನೀವು ಯಾವಾಗಲೂ ಸರಿ ಆದ ನಿರ್ಧಾರವನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ, ಸುರಕ್ಷಿತ ನಿರ್ಧಾರವನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ, ಬಹುತೇಕ ಎಲ್ಲಾ ಜನರು ತೆಗೆದುಕೊಳ್ಳುವ ನಿರ್ಧಾರ, ನೀವು ಎಲ್ಲರಂತೆ ಆಗುತ್ತೀರಿ.",
+      "ta": "நீங்கள் எப்போதும் சரியான முடிவுகளை எடுப்பீர்கள், பாதுகாப்பான முடிவுகளை எடுப்பீர்கள், மற்றவர்கள் எடுக்குமாறு எடுப்பீர்கள் என்றால், நீங்கள் மற்றவர்கள் போல் இருக்கிறீர்கள்.",
+      "te": "మీరు ఎల్లప్పుడూ సరైన నిర్ణయం తీసుకుంటే, సురక్షితమైన నిర్ణయం తీసుకుంటే, చాలా మంది చేసే నిర్ణయం, మీరు ఇతరులకంటే విభిన్నంగా ఉండరు."
+    }
+  },  
   {
     quote:
       "The downside is that a person spends $20 to watch that hero instead of being that hero himself.",
